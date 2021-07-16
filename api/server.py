@@ -47,4 +47,4 @@ def get_map_data():
 
 
 if __name__ == "__main__":
-    app.run("0.0.0.0", debug=True)
+    app.run("0.0.0.0", debug=True, port=5001) # will run on port 5000 by default

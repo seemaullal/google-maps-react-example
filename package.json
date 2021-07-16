@@ -3,11 +3,14 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "py-dev": "cd api && source env/bin/activate && python3 server.py"
   },
   "dependencies": {
     "@react-google-maps/api": "^2.2.0",
+    "bootstrap": "^5.0.0",
     "react": "^17.0.0",
+    "react-bootstrap": "^1.6.1",
     "react-dom": "^17.0.0",
     "react-router-dom": "^5.2.0"
   },

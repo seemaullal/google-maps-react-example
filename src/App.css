@@ -1,42 +1,45 @@
-.App {
-  text-align: center;
+.melon-card {
+  max-width: 23%;
+  margin: 0.5rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.melon-card h5 {
+  font-size: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#shopping .filters {
+  min-width: 20%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.loading-box {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  flex-direction: column;
+  margin-top: 300px;
 }
 
-.App-link {
-  color: #61dafb;
+.loading-box img {
+   display: block;
+   max-height: 100px;
+   margin: auto;
+   animation: pulse 1s infinite;
 }
 
-@keyframes App-logo-spin {
+.loading-box div {
+  font-size: 20px;
+  font-family: cursive;
+}
+
+@keyframes pulse {
   from {
-    transform: rotate(0deg);
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.6);
   }
   to {
-    transform: rotate(360deg);
+    transform: scale(1);
   }
-}
-
-button {
-  font-size: calc(10px + 2vmin);
 }
