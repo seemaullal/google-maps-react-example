@@ -21,10 +21,10 @@
 }
 
 .loading-box img {
-   display: block;
-   max-height: 100px;
-   margin: auto;
-   animation: pulse 1s infinite;
+  display: block;
+  max-height: 100px;
+  margin: auto;
+  animation: pulse 1s infinite;
 }
 
 .loading-box div {
