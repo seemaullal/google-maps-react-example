@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { GoogleMap, useJsApiLoader } from "@react-google-maps/api";
 import Loading from "./Loading";
-
+// https://react-google-maps-api-docs.netlify.app/#
 export default function MapExample() {
   const [mapData, setMapData] = useState([]);
   const [loading, setLoading] = useState(false);

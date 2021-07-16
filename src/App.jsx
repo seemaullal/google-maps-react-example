@@ -4,7 +4,7 @@ import { BrowserRouter, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./Navbar";
 import Homepage from "./Homepage";
-import MapExample from "./MapExample";
+import MapExample from "./MapExample"; //from the current folder (.) import MapExample
 import "./App.css";
 
 function App() {
