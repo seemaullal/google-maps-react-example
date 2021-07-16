@@ -1,16 +1,18 @@
 import React, { useState, useEffect } from "react";
-import { GoogleMap, useJsApiLoader } from "@react-google-maps/api";
+import {
+  GoogleMap,
+  useJsApiLoader,
+  InfoWindow,
+  Marker,
+} from "@react-google-maps/api";
 import Loading from "./Loading";
 // https://react-google-maps-api-docs.netlify.app/#
 export default function MapExample() {
   const [mapData, setMapData] = useState([]);
   const [loading, setLoading] = useState(false);
   const { isLoaded, loadError } = useJsApiLoader({
-    googleMapsApiKey: "AIzaSyAjpErE26dDxvQMnZS8I-cUOGjz6WW3rik", // ,
-    // ...otherOptions
+    googleMapsApiKey: "",
   });
-  console.log(mapData);
-
   useEffect(() => {
     setLoading(true);
     fetch("/api/map_data")
@@ -26,13 +28,18 @@ export default function MapExample() {
   }
   return (
     <GoogleMap
-      center={{ lat: -3.745, lng: -38.523 }}
+      center={{ lat: 72, lng: -140 }}
       mapContainerStyle={{ width: "400px", height: "400px" }}
-      zoom={10}
+      zoom={5}
     >
-      {
-        // ...map components like markers
-      }
+      {mapData.map((dataPoint) => {
+        return (
+          <Marker
+            key={dataPoint.id}
+            position={{ lat: dataPoint.cap_lat, lng: dataPoint.cap_long }}
+          />
+        );
+      })}
     </GoogleMap>
   );
 }
