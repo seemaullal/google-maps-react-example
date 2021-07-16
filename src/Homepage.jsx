@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-export default function Homepage(props) {
+export default function Homepage() {
   return (
     <div id="home-banner" className="row">
       <div className="col">

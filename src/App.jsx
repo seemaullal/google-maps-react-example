@@ -1,10 +1,10 @@
-import React, { useState } from "react";
-import ReactDOM from "react-dom";
+import React from "react";
 import { BrowserRouter, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./Navbar";
 import Homepage from "./Homepage";
-import MapExample from "./MapExample"; //from the current folder (.) import MapExample
+// from the current folder (.) import MapExample
+import MapExample from "./MapExample";
 import "./App.css";
 
 export default function App() {
