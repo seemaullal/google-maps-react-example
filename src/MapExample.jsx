@@ -6,7 +6,7 @@ export default function MapExample() {
   const [mapData, setMapData] = useState([]);
   const [loading, setLoading] = useState(false);
   const { isLoaded, loadError } = useJsApiLoader({
-    googleMapsApiKey: "", // ,
+    googleMapsApiKey: "AIzaSyAjpErE26dDxvQMnZS8I-cUOGjz6WW3rik", // ,
     // ...otherOptions
   });
   console.log(mapData);
