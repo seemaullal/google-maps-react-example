@@ -7,7 +7,7 @@ import Homepage from "./Homepage";
 import MapExample from "./MapExample"; //from the current folder (.) import MapExample
 import "./App.css";
 
-function App() {
+export default function App() {
   return (
     <BrowserRouter>
       <Navbar />
@@ -22,7 +22,3 @@ function App() {
     </BrowserRouter>
   );
 }
-
-ReactDOM.render(<App />, document.querySelector("#root"));
-
-export default App;
