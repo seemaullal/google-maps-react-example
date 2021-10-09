@@ -12,4 +12,4 @@ From the main project folder, run `npm install`.
 In 2 different tabs
 
 - Run Python server `npm run py-dev`
-- Run Javascript server `npm run dev`
+- Run Javascript server `npm start`
