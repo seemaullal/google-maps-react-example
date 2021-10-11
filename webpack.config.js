@@ -5,7 +5,10 @@ module.exports = {
   entry: path.join(__dirname, "src", "index.jsx"),
   output: { path: path.join(__dirname, "build"), filename: "index.bundle.js" },
   mode: process.env.NODE_ENV || "development",
-  resolve: { modules: [path.resolve(__dirname, "src"), "node_modules"] },
+  resolve: {
+    modules: [path.resolve(__dirname, "src"), "node_modules"],
+    extensions: [".js", ".jsx"],
+  },
   devServer: {
     static: path.join(__dirname, "src"),
     proxy: {
@@ -34,7 +37,4 @@ module.exports = {
       template: path.join(__dirname, "src", "index.html"),
     }),
   ],
-  resolve: {
-    extensions: [".js", ".jsx"],
-  },
 };

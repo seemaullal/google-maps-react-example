@@ -4,8 +4,7 @@ export default function Homepage() {
   return (
     <div id="home-banner" className="row">
       <div className="col">
-        <h1>Ubermelon hello</h1>
-        <p className="lead">Maps on demand.</p>
+        <h1>Google maps with React</h1>
       </div>
     </div>
   );
