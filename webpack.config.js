@@ -14,6 +14,7 @@ module.exports = {
     proxy: {
       "/api": "http://localhost:5001",
     },
+    historyApiFallback: true,
   },
   module: {
     rules: [
